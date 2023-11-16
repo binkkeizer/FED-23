@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
-  <img src="readme-images/Home.png" width="375px" alt="home scherm van kledingmerk filling pieces.">
+  <img src="readme-images/home.png" width="375px" alt="home scherm van kledingmerk filling pieces.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Pagina mannen
-  <img src="readme-images/Men.png" width="375px" alt="pagina van de mannen kleding.">
+  <img src="readme-images/men.png" width="375px" alt="pagina van de mannen kleding.">
  
 </details>
 
@@ -53,10 +53,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>Als site heb ik filling pieces gekozen uiteindelijk. Wat ik vooral merkte
+  bij de voice over is dat er links zitten van een menu die onder de foto zit. 
+  <img src="readme-images/onzichtbaarmenu.png" width="375px" alt="Foto waaronder er een menu zit dit is niet handi voor een screenreader."> Dit gebeurt ook bij de maten van de kleding op het homescherm. De maten zijn namelijk links. Maar die zie je alleen als je over de image hovert. Dus die leest de screenreader ook allemaal af als je niet hovert. Ook heb je veel pop-ups op de site wat ervoor zorgt dat de screenreader eerst die tekst opneemt.
+  <sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Links zijn niet helemaal goed gestructureerd met gebruik van de screenreader.
+  <img src="readme-images/maten.png" width="375px" alt="Screenreader weergeeft de link van de maten terwijl ze je niet ziet.">
+  <img src="readme-images/matenmethover.png" width="375px" alt="Nu zie je de maten, omdat je eroverheen hovert.">
+
+  Er wordt veel gebruik gemaakt van hovers.
+
+  Filling pieces eerst op de pagina knoppen staan van man en vrouw. En daarna hebben ze ook nog een navigatie waarbij je mannen en vrouwen hebt en dan schoenen of kleding kan selecteren als onderwerp.
+
+  Contrast is vaak goed. Wel gebruiken zij plaatjes waar wit in zit en dan gooien zij er witte tekst eroverheen. Dit kan onduidelijk zijn voor slechtziende. <img src="readme-images/witopwit.png" width="375px" alt="Witte tekst over een afbeelding met wit erin.">
+
+  Filling pieces heeft ook een live chat button toegevoegd. Wat mij opviel is toen ik de website de website naar telefoon deed. Is dat die button soortvan dubbel leek te gaan.  <img src="readme-images/livebuttonraar.png" width="375px" alt="Rare live chat knop die qua lay-out niet klopt.">
 
 </details>
 
