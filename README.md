@@ -81,16 +81,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>In week 1 heb ik vooral opdrachten gemaakt die wij in de les moesten maken.
-  Verder heb ik geoefend met de screenreader en kwam daar wat dingen tegen die verbeterd kunnen worden voor mijn site.Bij mijn site heb ik een navigatiebar proberen te maken hoe mijn site dat ook heeft. De balk lukt wel alleen moet ik kijken hoe ik een hover kan toevoegen aan de balk.<sup>e</sup> Ik heb thuis de opdrachten gemaakt met het grid. Dit was wel lastiger dan de andere opdrachten vond ik.</summary>
+  Verder heb ik geoefend met de screenreader en kwam daar wat dingen tegen die verbeterd kunnen worden voor mijn site.Ook heb ik een breakdownschets gemaakt van de pagina's die ik wil maken. De pagina bestaat uit een header, body en een footer wat logisch is. De header en footer zijn altijd het zelfde behalve als je het op een groot computer scherm toont inplaats van mobiel. Op mobiel is de navigatie namelijk met icons en een hamburger menu gemaakt. En op een computer is het gewoon met tekst. In de homepagina van filling pieces is er veel variatie met afbeeldingen. Eerst beginnen zij met een grote afbeelding daarna met een soort slider. En verder nog 2 afbeeldingen naast elkaar. De kleding wordt vaak gecategoriseerd aan de hand van mannen en vrouwen afdeling.<sup>e</sup> </summary>
 
   ### de hele pagina: 
-  <img src="navigatiebalkbegin.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="breakdownhomepage.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="navigatiebalkbegin.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="breakdowncampaignarchive.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="navigatiebalkbegin.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Hoe de footer er nou uitziet op de website: 
+  <img src="footervanfp.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
