@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="home.png" width="375px" alt="home scherm van kledingmerk filling pieces.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Pagina mannen
-  <img src="campaignarchive.png" width="375px" alt="pagina van de mannen kleding.">
+  Pagina campaigne archief
+  <img src="campaignarchive.png" width="375px" alt="pagina van campaigne archief.">
  
 </details>
 
@@ -104,6 +104,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerking week 1<sup>e</sup>Ik heb een hover toegevoegd aan mijn navigatiebalk. Ik heb eerst de balk zwart gemaakt. zodat ik het makkelijk kan zien als ik eroverheen hover. Verder heb ik gewerkt aan responsiveness. De website is op dit moment responsive alleen moet ik de navigatiebalk nog regelen. Of met CSS of met javascript nog even kijken hoe ik dat ga doen. Verder heb ik sliders toegevoegd voor de nieuwe producten van vrouwen en mannen. Die ook groter worden zodra je de website op computer laat werken.</summary>
 
   ### Stand van zaken
+  <img src="telefoonfpeerste.png" width="375px" alt="Hoe de sliders er op de website uitzien met kleding die nieuwe binnen is.">
+  <img src="computerfpeerste.png" width="375px" alt="Hoe de sliders er op de website uitzien met kleding die nieuwe binnen is.">
   <img src="newin.png" width="375px" alt="Hoe de sliders er op de website uitzien met kleding die nieuwe binnen is.">
   <img src="htmlvanslider.png" width="375px" alt="Html code van de slider die ik gemaakt heb. Wel divs gebruikt.">
   <img src="cssslider.png" width="375px" alt="Algemene css code voor de slider.">
