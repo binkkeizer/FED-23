@@ -118,11 +118,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Bink           | Phon                     | Silke           |Mees              | Zoë        |
-  | ---            | ---                      | ---             | ---              |            |
-  | dit bespreken  | en dit                   | en ik dit       | en dan ik dat    |            |
-  | en dat ook nog | dit als er tijd is       | nog een punt    | dit wil ik zeker | bij site   |
-  | -Divs    | button in button/gifs   | breakdownschets |  Fonts           | uitklappen |
+  | Bink: Divs in sections wat kan je doen ipv dat. | Phon: Button in button/gifs | Silke: Breakdownschets | Mees: Fonts van website | Zoë: detailvraag over uitklappen/ html en css vraag. |
 
 
   ### Verslag van meeting
