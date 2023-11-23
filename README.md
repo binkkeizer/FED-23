@@ -80,16 +80,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>In week 1 heb ik vooral opdrachten gemaakt die wij in de les moesten maken.
+  Verder heb ik geoefend met de screenreader en kwam daar wat dingen tegen die verbeterd kunnen worden voor mijn site.Bij mijn site heb ik een navigatiebar proberen te maken hoe mijn site dat ook heeft. De balk lukt wel alleen moet ik kijken hoe ik een hover kan toevoegen aan de balk.<sup>e</sup> Ik heb thuis de opdrachten gemaakt met het grid. Dit was wel lastiger dan de andere opdrachten vond ik.</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/navigatiebalkbegin.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/navigatiebalkbegin.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/navigatiebalkbegin.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -100,10 +101,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+  <summary>uitwerking week 1<sup>e</sup>Ik heb een hover toegevoegd aan mijn navigatiebalk. Ik heb eerst de balk zwart gemaakt. zodat ik het makkelijk kan zien als ik eroverheen hover. Verder heb ik gewerkt aan responsiveness. De website is op dit moment responsive alleen moet ik de navigatiebalk nog regelen. Of met CSS of met javascript nog even kijken hoe ik dat ga doen. Verder heb ik sliders toegevoegd voor de nieuwe producten van vrouwen en mannen. Die ook groter worden zodra je de website op computer laat werken.</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="../readme-images/newin.png" width="375px" alt="Hoe de sliders er op de website uitzien met kleding die nieuwe binnen is.">
+  <img src="../readme-images/htmlvanslider.png" width="375px" alt="Html code van de slider die ik gemaakt heb. Wel divs gebruikt.">
+  <img src="../readme-images/cssslider.png" width="375px" alt="Algemene css code voor de slider.">
+  <img src="../readme-images/imagenewin.png" width="375px" alt="Code van de images in de slider.">
+  <img src="../readme-images/responsivecode.png" width="375px" alt="De code om mijn pagina responsive te krijgen.">
+  <summary>Ik heb sliders gemaakt voor de mannen en vrouwen afdeling. Dat zijn alle producten die nieuw zijn op een rijtje. Verder heb ik de slider in een display grid gezet zodat kolommen kon maken. En zo kon ik uiteindelijk de site responsive krijgen door extra code toe te voegen bij een bepaalde grote van de website. Ik heb bij mijn html sections gebruikt en daarin divs gezet. Volgensmij mag je geen divs gebruiken. Maar je kan ook geen section in een section stoppen dus daar moet ik nog een oplossing voor vinden.</summary>
+
 
 
   ### Agenda voor meeting

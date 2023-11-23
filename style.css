@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+ header {
+	background-image:url('../images/fpshoeshome.jpg '); 
+	background-size: cover;
+	background-position: center;
+	height: 50vh; /*Hoogte van de image.*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	/*Tekst boven aan de afbeelding*/
+	position: relative;
+  }
+  
+  /* content voor over de background heen.*/
+  header section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5); /* Kleur van de achtergrond.*/
+  }
+  
+  /* Text boven de achtergrond. */
+  header section h1 {
+	font-size: 3rem;
+  }
+  
+ 
+  /* Navbar styles */
+  .navbar {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	transition: background-color 0.3s ease;
+  }
+  
+  .navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+  }
+  
+  .navbar li {
+	margin: 0 15px;
+  }
+  
+  .navbar a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	transition: color 0.3s ease;
+  }
+  
+  /* Change navbar color on hover */
+  .navbar:hover {
+	background-color: white;
+  }
+  
+  .navbar:hover a {
+	color: black;
+  }
+
+  body h2 {
+	margin: 1em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  .slider {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	/*Het zet zich vast op een scroll positie.*/
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type*/
+  }
+  
+  .slide {
+	margin-right: 0.1em;
+	width: 100%;
+	scroll-snap-align: start;
+	text-align: center;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
+  }
+  
+  .slide img {
+	width: auto;
+	height: 20vh;
+  }
+  
+  .slide h3 {
+	margin: 0.5em 1em 0 1em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #333;
+  }
+  
+  body h4 {
+	margin: 2em 0 1em 1em;
+	font-size: 1em;
+  }
+  
+  .slide h5 {
+	margin: 0.5em 1em 0 1em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #333;
+  }
+
+
+
+ /* Responsive */
+  @media screen and (min-width: 768px) {
+	header {
+	  background-size: cover;
+	  background-position: center;
+	  text-align: center;
+	  height: 90vh;
+	  /*Verandert hoogte als scherm kleiner wordt.*/
+	}
+	
+	header h1 {
+	  font-size: 2rem;
+	}
+	
+	.slide img {
+		height: 40vh;
+		
+	}
+  }
