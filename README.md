@@ -84,10 +84,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Verder heb ik geoefend met de screenreader en kwam daar wat dingen tegen die verbeterd kunnen worden voor mijn site.Ook heb ik een breakdownschets gemaakt van de pagina's die ik wil maken. De pagina bestaat uit een header, body en een footer wat logisch is. De header en footer zijn altijd het zelfde behalve als je het op een groot computer scherm toont inplaats van mobiel. Op mobiel is de navigatie namelijk met icons en een hamburger menu gemaakt. En op een computer is het gewoon met tekst. In de homepagina van filling pieces is er veel variatie met afbeeldingen. Eerst beginnen zij met een grote afbeelding daarna met een soort slider. En verder nog 2 afbeeldingen naast elkaar. De kleding wordt vaak gecategoriseerd aan de hand van mannen en vrouwen afdeling.<sup>e</sup> </summary>
 
   ### de hele pagina: 
-  <img src="breakdownhomepage.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="breakdownhomepage.JPG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="breakdowncampaignarchive.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="breakdowncampaignarchive.JPG" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Hoe de footer er nou uitziet op de website: 
   <img src="footervanfp.png" width="375px" alt="breakdown van nog een dynamisch deel">
