@@ -42,7 +42,7 @@
   
  
   /* Navbar styles */
-  .navbar {
+  nav {
 	background-color: black;
 	position: fixed;
 	width: 100%;
@@ -51,7 +51,7 @@
 	transition: background-color 0.3s ease;
   }
   
-  .navbar ul {
+  nav {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
@@ -59,11 +59,11 @@
 	height: 70px;
   }
   
-  .navbar li {
+  nav li {
 	margin: 0 15px;
   }
   
-  .navbar a {
+  nav a {
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
@@ -71,11 +71,11 @@
   }
   
   /* Change navbar color on hover */
-  .navbar:hover {
+  nav:hover {
 	background-color: white;
   }
   
-  .navbar:hover a {
+  nav:hover a {
 	color: black;
   }
 
@@ -84,30 +84,38 @@
 	font-size: 1em;
   }
 
-  .slider {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
+  section {
+	width: 100%;
+	overflow: hidden;
 	/*Het zet zich vast op een scroll positie.*/
 	/*https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type*/
   }
   
-  .slide {
-	margin-right: 0.1em;
-	width: 100%;
-	scroll-snap-align: start;
-	text-align: center;
+  ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
 	/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
   }
   
-  .slide img {
+  li {
+	width: 100%;
+	scroll-snap-align: start;
+	text-align: center;
+  }
+
+  li img {
 	width: auto;
 	height: 20vh;
+	margin: 0 .1em 0 0;
   }
   
-  .slide h3 {
-	margin: 0.5em 1em 0 1em;
+  li h3 {
+	margin: 0.5em 1em 0 0;
 	font-size: 0.7em;
 	text-transform: uppercase;
 	color: #333;
@@ -118,13 +126,25 @@
 	font-size: 1em;
   }
   
-  .slide h5 {
+  li h5 {
 	margin: 0.5em 1em 0 1em;
 	font-size: 0.7em;
 	text-transform: uppercase;
 	color: #333;
   }
 
+  body h6 {
+	margin: 2em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  main section:nth-last-child(3) {
+	display: flex;
+  }
+
+  main section ul li video {
+	max-width: 100%;
+  }
 
 
  /* Responsive */
@@ -141,8 +161,9 @@
 	  font-size: 2rem;
 	}
 	
-	.slide img {
+	li img {
 		height: 40vh;
 		
 	}
+	
   }
