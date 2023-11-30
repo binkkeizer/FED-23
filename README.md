@@ -123,11 +123,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+   @font-face Url format (‘woff2’);
+ ul> li> items gebruiken voor de plaatjes en h2> daarboven.
+ a> tag voor andere pagina en button voor ergens te komen op dezelfde pagina.
+label> en input>. Koppelen via een id en for daar zet je dan hetzelfde woord in. Je mag de input ook in de label zetten dan heb je geen id en for nodig.
+ Html picture> element reduce gebruiken als je dan aanpast dan komt er een ander plaatje. No-preference is het maakt niet uit. Color-scheme:dark dus aan de hand van de dark mode.
+max-width: 100% gebruiken voor responsive.
+details>summary>ul>li>/li>/ul>/summary>/details>
+-section>h3>button>+/button>ul>/ul>/h3>/section> + tussen de button als je wil uitklappen. JS gebruiken var deButton = document.querySelector(“button”); en dan button.onclik = toggleMenu en dan maak je een functie aan van de toggle menu. En dan maak je een class op je section.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+
 
 </details>
 
@@ -138,20 +143,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  <summary>Ik heb een nieuwe sectie op de site gezet met de categorieën mannen en vrouwen. Hierin 
+  moet ik nog stijlen. Maar ik heb moeite met nth-type selecteren. En hoe ik de derde section kan selecteren.<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="voortgang2.png" width="375px" alt="Hoe de sliders er op de website uitzien met kleding die nieuwe binnen is.">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Bink: nth-type/child-type hoe moet ik de derde section selecteren. En de tags daarin.
+  Thomas: 
+  Robin:
 
 
   ### Verslag van meeting
