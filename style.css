@@ -139,7 +139,7 @@
   }
 
   main section:nth-last-child(3) {
-	display: flex;
+	inset: 0;
   }
 
   main section ul li video {
