@@ -1,0 +1,50 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em 5em;
+	background: lawngreen;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo {
+	font-size: 32px;
+	color: #111;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+nav a {
+	font-size: 1em;
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 0.5em;
+}
+
