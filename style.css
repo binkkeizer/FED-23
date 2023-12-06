@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Fonts downloaden woff.*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+ header {
+	background-image:url('../images/schoenenhome.webp'); 
+	background-size: cover;
+	background-position: center;
+	height: 90vh; /*Hoogte van de image.*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	/*Tekst boven aan de afbeelding*/
+	position: relative;
+  }
+  
+  /* content voor over de background heen.*/
+  header section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5); /* Kleur van de achtergrond.*/
+  }
+  
+  /* Text boven de achtergrond. */
+  header section h1 {
+	font-size: 3rem;
+  }
+  
+ 
+  /* Navbar styles */
+  nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+  }
+  
+  nav li {
+	margin: 0 15px;
+  }
+  
+  nav a {
+	color: inherit;
+	font-weight: bold;
+	transition: color 0.3s ease;
+  }
+  
+  /* Change navbar color on hover */
+  nav:hover {
+	background-color: white;
+  }
+  
+  nav:hover a {
+	color: black;
+	text-decoration: overline;
+  }
+
+  nav:focus a {
+	color: red;
+  }
+
+  nav:active a {
+	color: red;
+  }
+
+  body h2 {
+	margin: 1em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  section {
+	width: 100%;
+	overflow: hidden;
+	/*Het zet zich vast op een scroll positie.*/
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type*/
+  }
+  
+  /*Ul's van eerste twee secties had ook eerst invloed op mijn header. */
+  ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
+  }
+
+  section:first-child ul,
+  section:nth-of-type(2) ul {
+	overflow-x:auto;
+  }
+
+  
+  li {
+	width: 100%;
+	scroll-snap-align: start;
+	text-align: center;
+  }
+
+  li img {
+	width: auto;
+	height: 20vh;
+	margin: 0 .1em 0 0;
+  }
+  
+  li h3 {
+	margin: 0.5em 1em 0 0;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #333;
+  }
+  
+  section:nth-of-type(2) h2 {
+	margin: 2em 0 1em 1em;
+	font-size: 1em;
+  }
+  
+  section:nth-of-type(2) h3 {
+	margin: 0.5em 1em 0 1em;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #333;
+  }
+
+ 
+
+  section:nth-of-type(3) {
+	display: grid;
+	width: 100%;
+  }
+
+  section:nth-of-type(3) ul {
+	scroll-snap-type: none;
+  }
+
+  section:nth-of-type(3) li  {
+	position: relative;
+  }
+
+  section:nth-of-type(3) h2 {
+	margin: 2em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  section:nth-of-type(3) li img  {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  section:nth-of-type(3) li video  {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  section:nth-of-type(3) li h3,h5  {
+	position: absolute;
+	margin: 0;
+	left: 0%;
+	bottom: 51%;
+	right: 0;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	text-transform: none;
+	/*Hoofletters weg.*/
+  }
+
+  section:nth-of-type(3) h4 {
+	margin: 1em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  section:nth-of-type(3) li a {
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: white;
+	color: black;
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	border: none;
+	white-space: nowrap;
+	/*Tekst gaat niet naar beneden als je het klein maakt.*/
+	cursor: pointer;
+	/*Muis krijgt handje als je over de link heen gaat.*/
+	border-radius: 5px;
+	text-decoration: none;
+  }
+
+  section:nth-of-type(4) p {
+	margin: 2em;
+	font-size: 1em;
+  }
+
+  section:nth-of-type(5) li  {
+	position: relative;
+  }
+
+  section:nth-of-type(5) li video  {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  section:nth-of-type(5) li a {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: white;
+	color: black;
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	border: none;
+	white-space: nowrap;
+	/*Tekst gaat niet naar beneden als je het klein maakt.*/
+	cursor: pointer;
+	/*Muis krijgt handje als je over de link heen gaat.*/
+	border-radius: 5px;
+	text-decoration: none;
+  }
+
+ /* Responsive */
+  @media screen and (min-width: 1024px) {
+	header {
+	  background-size: cover;
+	  background-position: center;
+	  text-align: center;
+	  height: 90vh;
+	  /*Verandert hoogte als scherm kleiner wordt.*/
+	  background-image: url('../images/schoenenhomegroter.webp');
+	}
+	
+	header h1 {
+	  font-size: 2rem;
+	}
+	
+	li img {
+		height: 40vh;
+		
+	}
+	
+  }
