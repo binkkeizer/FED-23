@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/*Fonts downloaden woff.*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,10 +10,10 @@
   }
   
  header {
-	background-image:url('../images/fpshoeshome.jpg '); 
+	background-image:url('../images/schoenenhome.webp'); 
 	background-size: cover;
 	background-position: center;
-	height: 50vh; /*Hoogte van de image.*/
+	height: 90vh; /*Hoogte van de image.*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +66,6 @@
   }
   
   nav a {
-	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
 	transition: color 0.3s ease;
@@ -77,6 +78,15 @@
   
   nav:hover a {
 	color: black;
+	text-decoration: overline;
+  }
+
+  nav:focus a {
+	color: red;
+  }
+
+  nav:active a {
+	color: red;
   }
 
   body h2 {
@@ -91,16 +101,22 @@
 	/*https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type*/
   }
   
+  /*Ul's van eerste twee secties had ook eerst invloed op mijn header. */
   ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
-	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	-webkit-overflow-scrolling: touch;
 	/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-align*/
   }
+
+  section:first-child ul,
+  section:nth-of-type(2) ul {
+	overflow-x:auto;
+  }
+
   
   li {
 	width: 100%;
@@ -121,40 +137,99 @@
 	color: #333;
   }
   
-  body h4 {
+  section:nth-of-type(2) h2 {
 	margin: 2em 0 1em 1em;
 	font-size: 1em;
   }
   
-  li h5 {
+  section:nth-of-type(2) h3 {
 	margin: 0.5em 1em 0 1em;
 	font-size: 0.7em;
 	text-transform: uppercase;
 	color: #333;
   }
 
-  body h6 {
+ 
+
+  section:nth-of-type(3) {
+	display: grid;
+	width: 100%;
+  }
+
+  section:nth-of-type(3) ul {
+	scroll-snap-type: none;
+  }
+
+  section:nth-of-type(3) li  {
+	position: relative;
+  }
+
+  section:nth-of-type(3) h2 {
 	margin: 2em 0 1em 1em;
 	font-size: 1em;
   }
 
-  main section:nth-last-child(3) {
-	inset: 0;
+  section:nth-of-type(3) li img  {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
   }
 
-  main section ul li video {
+  section:nth-of-type(3) li video  {
 	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
   }
 
+  section:nth-of-type(3) li h3,h5  {
+	position: absolute;
+	margin: 0;
+	left: 0%;
+	bottom: 51%;
+	right: 0;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	text-transform: none;
+	/*Hoofletters weg.*/
+  }
+
+  section:nth-of-type(3) h4 {
+	margin: 1em 0 1em 1em;
+	font-size: 1em;
+  }
+
+  section:nth-of-type(3) li a {
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: white;
+	color: black;
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	border: none;
+	white-space: nowrap;
+	/*Tekst gaat niet naar beneden als je het klein maakt.*/
+	cursor: pointer;
+	/*Muis krijgt handje als je over de link heen gaat.*/
+	border-radius: 5px;
+  }
+
+  section:nth-of-type(4) p {
+	margin: 2em;
+	font-size: 1em;
+  }
 
  /* Responsive */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
 	header {
 	  background-size: cover;
 	  background-position: center;
 	  text-align: center;
 	  height: 90vh;
 	  /*Verandert hoogte als scherm kleiner wordt.*/
+	  background-image: url('../images/schoenenhomegroter.webp');
 	}
 	
 	header h1 {
