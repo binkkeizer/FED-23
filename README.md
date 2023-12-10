@@ -185,7 +185,8 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  <summary>In deze week heb ik vooral gewerkt aan mijn navigatie die is bijna af. Alleen moet ik de letters en iconen 
+  nog de goede kleur krijgen. Verder heb ik nog wat dingen op de homepagina gefixt. Alles is nu af behalve de footer en nog een deel van de tweede pagina.<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -194,20 +195,17 @@ details>summary>ul>li>/li>/ul>/summary>/details>
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Bink: Footer bespreken met lijnen hoe en wat ik moet doen. Ook het menu als die transparant is dat de letters wit zijn.
+  Vraagje over contrast of ik een beetje mag afwijken van de huisstijl daarvoor.
+  Thomas: Animatie vraag.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  |automatische padding bij ul moet je dus uitzetten.
+  |Je kan background color gebruiken voor streepjes in de footer.
+  |Columns verwerken.
 
 </details>
 
@@ -231,7 +229,7 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Op het einde wou ik mijn navbar in mijn eerste scherm zetten. Maar dit kwam in de knel met de background image die ik heb gebruikt. voor aan het begin van de site. Het lukte mij niet om dit voor elkaar te krijgen dus een deel van de bovenkant van de eerste pagina mist nu.
 
   <img src="/readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -249,8 +247,9 @@ details>summary>ul>li>/li>/ul>/summary>/details>
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+  3. https://blog.hubspot.com/website/z-index#:~:text=What%20is%20z%2Dindex%3F,elements%20along%20the%20z%2Daxis.
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type
+  5. https://stackoverflow.com/questions/45497599/how-to-set-background-image-as-header-with-logo-and-navigation-bar
 </details>

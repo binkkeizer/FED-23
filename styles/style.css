@@ -1,6 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto-Regular.woff');
+	font-weight: 400;
+	font-style: normal;
+}
 
 /*Fonts downloaden woff.*/
+
+:root {
+	--witte-kleur:white;
+	--zwarte-kleur: black;
+	--heading-kleur: #333;
+}
 
 * {
 	margin: 0;
@@ -9,89 +20,141 @@
 	font-family: 'Roboto', sans-serif;
   }
   
- header {
-	background-image:url('../images/schoenenhome.webp'); 
-	background-size: cover;
-	background-position: center;
-	height: 90vh; /*Hoogte van de image.*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: white;
-	/*Tekst boven aan de afbeelding*/
-	position: relative;
-  }
-  
-  /* content voor over de background heen.*/
-  header section {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.5); /* Kleur van de achtergrond.*/
-  }
-  
-  /* Text boven de achtergrond. */
-  header section h1 {
-	font-size: 3rem;
-  }
-  
- 
-  /* Navbar styles */
-  nav {
-	background-color: black;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 999;
-	transition: background-color 0.3s ease;
-  }
-  
-  nav {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 70px;
-  }
-  
-  nav li {
-	margin: 0 15px;
-  }
-  
-  nav a {
-	color: inherit;
-	font-weight: bold;
-	transition: color 0.3s ease;
-  }
-  
-  /* Change navbar color on hover */
-  nav:hover {
-	background-color: white;
-  }
-  
-  nav:hover a {
-	color: black;
-	text-decoration: overline;
-  }
+/* algemene styling */
+button {
+	font:inherit;
+}
 
-  nav:focus a {
-	color: red;
-  }
+select {
+	font:inherit;
+}
 
-  nav:active a {
-	color: red;
-  }
+
+
+/* header */
+header {
+	padding:0 1em;
+	/*background-color: white; bij andere pagina dan homepagina deze erin zetten*/
+	display:grid;
+	grid-template-columns:2em 2em 1fr 4.5em;
+	justify-items:center;
+	align-items:center;
+	gap:.5em;
+	
+	border-bottom:solid 1px var(--zwarte-kleur);
+}
+
+header:hover {
+	background-color: var(--witte-kleur);
+	border-color: var(--zwarte-kleur);
+}
+
+/* logo */
+header > a {
+	position:relative;
+	z-index:10;
+	padding-top: 0.5em;
+	color: var(--witte-kleur);
+	width: 8em;
+}
+
+header:hover > a,
+header.open > a {
+	color: var(--zwarte-kleur);
+}
+
+/* alle buttons */
+header > button {
+	position:relative;
+	z-index:10;
+	width:2.5em;
+	aspect-ratio:1/1;
+	margin:0;
+	border: none;
+	background: none;
+	background-color: transparent;
+	color: var(--witte-kleur);
+	cursor: pointer;
+}
+
+header button img {
+	width: 1.5em;
+}
+
+header:hover > button,
+header.open > button {
+	color: var(--zwarte-kleur);
+}
+
+/* menu button */
+header > button:nth-of-type(1) {
+	order:-2;
+}
+
+/* menu zoek */
+header > button:nth-of-type(2) {
+	order:-1;
+}
+
+/* menu winkelwagen */
+header > button:nth-of-type(3) {
+	justify-self:end;
+}
+
+
+/* NAV */
+header nav {
+	position:absolute;
+	z-index:5;
+	inset:0;
+	padding:2.5em 0em 1em;
+	background-color: var(--witte-kleur);
+	
+	translate:-100% 0;
+	transition:.3s;
+}
+
+header.open nav {
+	translate:0 0;
+}
+
+header nav ul {
+	margin:0;
+	padding:1em;
+	list-style:none;
+}
+
+header nav ul:nth-of-type(1) {
+	display: flex;
+	border-top:solid 1px var(--zwarte-kleur);
+	border-bottom:solid 1px var(--zwarte-kleur);
+}
+
+header nav ul li a:nth-of-type(1) {
+	padding: 1em;
+	color: var(--zwarte-kleur);
+	text-decoration: none;
+}
+
+
+header nav ul button {
+	display:none;
+}
+
+header nav ul:nth-of-type(3) {
+	display: flex;
+	border-top:solid 1px var(--zwarte-kleur);
+}
+
 
   body h2 {
 	margin: 1em 0 1em 1em;
 	font-size: 1em;
+  }
+
+  main:first-child img {
+	width: 100%;
+	height: 90vh;
   }
 
   section {
@@ -134,7 +197,7 @@
 	margin: 0.5em 1em 0 0;
 	font-size: 0.7em;
 	text-transform: uppercase;
-	color: #333;
+	color: var(--heading-kleur);
   }
   
   section:nth-of-type(2) h2 {
@@ -146,7 +209,7 @@
 	margin: 0.5em 1em 0 1em;
 	font-size: 0.7em;
 	text-transform: uppercase;
-	color: #333;
+	color: var(--heading-kleur);
   }
 
  
@@ -178,7 +241,7 @@
   section:nth-of-type(3) li video  {
 	max-width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: cover
   }
 
   section:nth-of-type(3) li h3,h5  {
@@ -187,7 +250,7 @@
 	left: 0%;
 	bottom: 51%;
 	right: 0;
-	color: white;
+	color: var(--witte-kleur);
 	text-align: center;
 	font-size: 2em;
 	text-transform: none;
@@ -204,8 +267,8 @@
 	top: 51%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	background-color: white;
-	color: black;
+	background-color: var(--witte-kleur);
+	color: var(--zwarte-kleur);
 	font-size: 1em;
 	padding: 0.75em 1.5em;
 	border: none;
@@ -215,6 +278,24 @@
 	/*Muis krijgt handje als je over de link heen gaat.*/
 	border-radius: 5px;
 	text-decoration: none;
+  }
+
+  section:nth-of-type(3) li a:hover {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  section:nth-of-type(3) li a:active {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  section:nth-of-type(3) li a:focus {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
   }
 
   section:nth-of-type(4) p {
@@ -237,8 +318,8 @@
 	top: 60%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	background-color: white;
-	color: black;
+	background-color: var(--witte-kleur);
+	color: var(--zwarte-kleur);
 	font-size: 1em;
 	padding: 0.75em 1.5em;
 	border: none;
@@ -250,24 +331,195 @@
 	text-decoration: none;
   }
 
+  section:nth-of-type(5) li a:hover {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  section:nth-of-type(5) li a:active {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  section:nth-of-type(5) li a:focus {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  footer section:first-child ul, footer section:nth-last-of-type(2) img {
+	margin: 0;
+	padding: 0.1em 0;
+	background-color: var(--zwarte-kleur);
+	display: grid;
+	gap: 0.1em;
+
+  }
+
+  footer section:first-child li {
+	background-color: var(--witte-kleur);
+	padding: 2em;
+  }
+
+  footer section ul li a {
+	text-decoration: none;
+  }
+
+  footer section:nth-of-type(2){
+	display: flex;
+	justify-content: center;
+  }
+
+  footer select {
+	width: 90%;
+	margin: 2em;
+	padding: 1em;
+	background-color: var(--witte-kleur);
+	border-style: solid;
+	border-color: var(--zwarte-kleur);
+	border-radius: 1em;
+  }
+
+  footer section ul li:first-child img {
+	filter: contrast(0.5);
+	/*Contrast lager zodat de text wat beter naar voren springt.*/
+  }
+
+  footer section ul li:first-child h2 {
+	position: absolute;
+	margin: 0;
+	left: 0%;
+	bottom: 54%;
+	right: 0;
+	color: var(--witte-kleur);
+	text-align: center;
+	font-size: 2em;
+	text-transform: none;
+  }
+
+  footer section:nth-of-type(4) ul {
+	margin: 0;
+	padding: 0.1em 0;
+	background-color: var(--zwarte-kleur);
+	display: grid;
+	gap: 0.1em;
+  }
+
+  footer section:nth-of-type(4) li {
+	background-color: var(--witte-kleur);
+	padding: 1em;
+	text-align: left;
+  }
+
+
+
+
+
+
  /* Responsive */
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
 	header {
-	  background-size: cover;
-	  background-position: center;
-	  text-align: center;
-	  height: 90vh;
-	  /*Verandert hoogte als scherm kleiner wordt.*/
-	  background-image: url('../images/schoenenhomegroter.webp');
+		display:flex;
+		
+		background-color: var(--witte-kleur);
+		border-color:var(--zwarte-kleur);
 	}
 	
-	header h1 {
-	  font-size: 2rem;
+	header > button {
+		display:none;
+	}
+	
+	header nav {
+		position:static;
+		translate:0 0;
+		flex-grow:1;
+		
+		padding:0;
+		
+		display:flex;
+		justify-content:end;
+		
+		background-color: transparent;
+	}
+	
+	header nav ul {
+		display: flex;
+		align-items: center;
+		gap:.5em;
+		margin-left:auto;
+		padding:0;
+	}
+	
+	header nav ul:nth-of-type(1) {
+		border-top: none;
+		border-bottom: none;
+	}
+	
+	header nav ul button {
+		display:block;
+	}
+	
+	header nav ul:nth-of-type(2) button {
+		height:2.5em;
+		margin:0;
+		/*Dit moet aangepast worden naar transparent voor home pagina.*/
+		background-color: transparent;
+	}
+	
+	header nav ul select {
+		display:none;
+	}
+
+	header nav ul:nth-of-type(3) {
+		font-size: .75em;
+		border: none;
+	}
+
+	header nav ul:nth-of-type(3) button {
+		border: none;
+		background: none;
+	}
+
+	header nav ul li:first-child p {
+		display: none;
 	}
 	
 	li img {
 		height: 40vh;
-		
+	}
+
+	footer section:first-child ul {
+		padding: 0.1em;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	
   }
+
+  /*  header {
+	background-image:url('../images/schoenenhome.webp'); 
+	background-size: cover;
+	background-position: center;
+	height: 90vh; /*Hoogte van de image.
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	/*Tekst boven aan de afbeelding*/
+	/*position: relative;
+  }
+  
+  /* content voor over de background heen.*/
+ /* header section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5); /* Kleur van de achtergrond.*/

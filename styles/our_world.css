@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto-Regular.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root {
+	--witte-kleur:white;
+	--zwarte-kleur: black;
+	--heading-kleur: #333;
+}
 
 body {
 	margin:0;
-	background-color:maroon;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -20,20 +30,19 @@ select {
 /* header */
 header {
 	padding:0 1em;
-	
-	
+	/*background-color: white; bij andere pagina dan homepagina deze erin zetten*/
 	display:grid;
 	grid-template-columns:2em 2em 1fr 4.5em;
 	justify-items:center;
 	align-items:center;
 	gap:.5em;
 	
-	border-bottom:solid 1px white;
+	border-bottom:solid 1px var(--zwarte-kleur);
 }
 
 header:hover {
-	background-color:white;
-	border-color:black;
+	background-color: var(--witte-kleur);
+	border-color: var(--zwarte-kleur);
 }
 
 /* logo */
@@ -41,31 +50,36 @@ header > a {
 	position:relative;
 	z-index:10;
 	padding-top: 0.5em;
-	color:white;
+	color: var(--witte-kleur);
 	width: 8em;
 }
 
 header:hover > a,
 header.open > a {
-	color:black;
+	color: var(--zwarte-kleur);
 }
 
 /* alle buttons */
 header > button {
 	position:relative;
 	z-index:10;
-	
 	width:2.5em;
 	aspect-ratio:1/1;
 	margin:0;
-	
-	background-color:transparent;
-	color:white;
+	border: none;
+	background: none;
+	background-color: transparent;
+	color: var(--witte-kleur);
+	cursor: pointer;
+}
+
+header button img {
+	width: 1.5em;
 }
 
 header:hover > button,
 header.open > button {
-	color:black;
+	color: var(--zwarte-kleur);
 }
 
 /* menu button */
@@ -90,7 +104,7 @@ header nav {
 	z-index:5;
 	inset:0;
 	padding:2.5em 0em 1em;
-	background-color:white;
+	background-color: var(--witte-kleur);
 	
 	translate:-100% 0;
 	transition:.3s;
@@ -108,13 +122,13 @@ header nav ul {
 
 header nav ul:nth-of-type(1) {
 	display: flex;
-	border-top:solid 1px black;
-	border-bottom:solid 1px black;
+	border-top:solid 1px var(--zwarte-kleur);
+	border-bottom:solid 1px var(--zwarte-kleur);
 }
 
 header nav ul li a:nth-of-type(1) {
 	padding: 1em;
-	color: black;
+	color: var(--zwarte-kleur);
 	text-decoration: none;
 }
 
@@ -125,19 +139,204 @@ header nav ul button {
 
 header nav ul:nth-of-type(3) {
 	display: flex;
-	border-top:solid 1px black;
+	border-top:solid 1px var(--zwarte-kleur);
 }
 
+main section {
+	display: grid;
+	width: 100%;
+	margin: 0;
+}
+
+main section ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+main section ul li video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+main section ul li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+main section ul li h2 {
+	position: absolute;
+	margin: 0;
+	left: 0%;
+	bottom: 54%;
+	right: 0;
+	color: var(--witte-kleur);
+	text-align: center;
+	font-size: 2em;
+	text-transform: none;
+}
+
+main section ul li a {
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: var(--witte-kleur);
+	color: var(--zwarte-kleur);
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	border: none;
+	white-space: nowrap;
+	/*Tekst gaat niet naar beneden als je het klein maakt.*/
+	cursor: pointer;
+	/*Muis krijgt handje als je over de link heen gaat.*/
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+main section ul li a:hover {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+}
+
+main section ul li a:active {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+}
+
+main section ul li a:focus {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+}
+
+footer section:first-child ul, footer section:nth-last-of-type(2) img {
+	margin: 0;
+	padding: 0.1em 0;
+	background-color: var(--zwarte-kleur);
+	display: grid;
+	gap: 0.1em;
+
+  }
+
+  footer section:first-child li {
+	background-color: var(--witte-kleur);
+	padding: 2em;
+  }
+
+  footer section ul li a {
+	text-decoration: none;
+  }
+
+  footer section:nth-of-type(2){
+	display: flex;
+	justify-content: center;
+  }
+
+  footer select {
+	width: 90%;
+	margin: 2em;
+	padding: 1em;
+	background-color: var(--witte-kleur);
+	border-style: solid;
+	border-color: var(--zwarte-kleur);
+	border-radius: 1em;
+  }
+
+  footer section ul li:first-child img {
+	filter: contrast(0.5);
+	/*Contrast lager zodat de text wat beter naar voren springt.*/
+  }
+
+  footer section:nth-of-type(3) {
+	position: relative;
+  }
+
+  footer section ul li:first-child h2 {
+	position: absolute;
+	margin: 0;
+	left: 0%;
+	bottom: 54%;
+	right: 0;
+	color: var(--witte-kleur);
+	text-align: center;
+	font-size: 2em;
+	text-transform: none;
+  }
+
+  footer section:nth-of-type(3) ul {
+	padding: 0;
+  }
+
+  footer section:nth-of-type(3) li img {
+	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  }
+
+  footer section:nth-of-type(3) a {
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: var(--witte-kleur);
+	color: var(--zwarte-kleur);
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	border: none;
+	white-space: nowrap;
+	/*Tekst gaat niet naar beneden als je het klein maakt.*/
+	cursor: pointer;
+	/*Muis krijgt handje als je over de link heen gaat.*/
+	border-radius: 5px;
+	text-decoration: none;
+  }
+
+  footer section:nth-of-type(3) a:hover {
+	background-color: var(--zwarte-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  footer section:nth-of-type(3) a:active {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  footer section:nth-of-type(3) a:focus {
+	background-color: var(--heading-kleur);
+	color: var(--witte-kleur);
+	transition: 1s;
+  }
+
+  footer section:nth-of-type(4) ul {
+	margin: 0;
+	padding: 0;
+	background-color: var(--zwarte-kleur);
+	display: grid;
+	gap: 0.1em;
+  }
+
+  footer section:nth-of-type(4) li {
+	background-color: var(--witte-kleur);
+	padding: 1em;
+	text-align: left;
+  }
 
 
 
-
-@media (width > 40em) {
+@media (width > 64em) {
 	header {
 		display:flex;
 		
-		background-color:white;
-		border-color:black;
+		background-color: var(--witte-kleur);
+		border-color:var(--zwarte-kleur);
 	}
 	
 	header > button {
@@ -154,19 +353,20 @@ header nav ul:nth-of-type(3) {
 		display:flex;
 		justify-content:end;
 		
-		background-color:transparent;
+		background-color: transparent;
 	}
 	
 	header nav ul {
-		display:flex;
-		align-items:center;
+		display: flex;
+		align-items: center;
 		gap:.5em;
 		margin-left:auto;
 		padding:0;
 	}
 	
 	header nav ul:nth-of-type(1) {
-		border-top:none;
+		border-top: none;
+		border-bottom: none;
 	}
 	
 	header nav ul button {
@@ -176,7 +376,8 @@ header nav ul:nth-of-type(3) {
 	header nav ul:nth-of-type(2) button {
 		height:2.5em;
 		margin:0;
-		background-color:transparent;
+		/*Dit moet aangepast worden naar transparent voor home pagina.*/
+		background-color: transparent;
 	}
 	
 	header nav ul select {
@@ -184,12 +385,21 @@ header nav ul:nth-of-type(3) {
 	}
 
 	header nav ul:nth-of-type(3) {
-		display: none;
-		border-top:solid 1px black;
+		font-size: .75em;
+		border: none;
 	}
 
-	header nav ul li p:nth-of-type(4) {
+	header nav ul:nth-of-type(3) button {
+		border: none;
+		background: none;
+	}
+
+	header nav ul li:first-child p {
 		display: none;
 	}
-	
+
+	main section {
+		display: inline-block
+	}
+
 }
