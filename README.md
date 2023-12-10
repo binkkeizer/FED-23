@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Ik ga mij eerst focussen op surface plane. Als ik dan tijd over heb dan ga ik de website responsive proberen te maken.
+  Ik ga mij focussen op responsiveness en als ik tijd over heb ga ik voor surface plane nog wat doen.
  
 </details>
 
@@ -171,10 +171,7 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <summary> Vergeleken met de filling pieces site is mijn site toegankelijker, omdat het er aria-labels zijn toegevoegd aan knoppen die eigenlijk niet veel zeggen. Ook heb ik een bij een image de contrast aangepast zodat de witte letters erboven op beter te lezen zijn. Verder wordt er geen gebruik gemaakt van divs, maar semantisch correcte code. Dit zorgt ervoor dat de structuur beter in elkaar zit. En de taal die ik in de aria-labels zet omschrijft goed waarvoor een knop bedoelt is. Ook is er een hover, active en focus state bij de buttons.<sup>e</sup> werkgroep</summary>
 
 </details>
 
@@ -189,7 +186,7 @@ details>summary>ul>li>/li>/ul>/summary>/details>
   nog de goede kleur krijgen. Verder heb ik nog wat dingen op de homepagina gefixt. Alles is nu af behalve de footer en nog een deel van de tweede pagina.<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik vond het lastig om in deze fase iets nieuws in de site toe te voegen. Een deel wordt namelijk al aangepast door de geschreven CSS code. Dus je moet heel goed gaan graven wil je iets goed fixen. Als je dan iets goed krijgt geeft het ook een goed gevoel. Maar het kost wel meer tijd dan aan het begin van de site.
 
 
   ### Agenda voor meeting
@@ -201,8 +198,6 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
   |automatische padding bij ul moet je dus uitzetten.
   |Je kan background color gebruiken voor streepjes in de footer.
   |Columns verwerken.
@@ -216,22 +211,28 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 ## Eindgesprek (week 5)
 
 <details>
-  <summary>uitwerken voor eindgesprek</summary>
+  <summary>uiteindelijk heb ik twee pagina's gemaakt. Van de website van Filling Pieces. Namelijk de hoofdpagina en de onze wereld pagina. Bij de homepagina ben ik toch wel het trots op de sectie met mannen en vrouwen afdeling. En de tweede pagina zijn vooral filmpjes en foto's die weer naar ergens anders leiden in de echte website.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="/readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/footerp1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/paginatwee.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het maken van een slider ging heel goed en ik heb het geleerd zonder divs te gebruiken uiteindelijk. Ook heb ik geleerd hoe je nth-of-type moet gebruiken om specifieke tags aan te spreken. Ik ben blij dat ik dat geleerd heb. Verder heb ik display grid/flex beter geleerd en dat is nu makkelijker toe te passen. Wat wel pittig was, maar waar ik wel blij mee ben dat ik het gekozen had is de responsiveness. Bij de navbar had ik wel hulp nodig en je moet dingen in de @media aanspreken als het scherm groter wordt. Alleen wat ik er lastig aan vond was dat je sommige dingen weg moest halen maar wel al aan het begin bij de html moest neerzetten.
 
-  <img src="/readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/deslider.png" width="375px" alt="top">
+  <img src="/readme-images/navbarklein.png" width="375px" alt="top">
+  <img src="/readme-images/navbargroot.png" width="375px" alt="top">
+  <img src="/readme-images/displaynone.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Op het einde wou ik mijn navbar in mijn eerste scherm zetten. Maar dit kwam in de knel met de background image die ik heb gebruikt. voor aan het begin van de site. Het lukte mij niet om dit voor elkaar te krijgen dus een deel van de bovenkant van de eerste pagina mist nu.
+  Op het einde wou ik mijn navbar in mijn eerste scherm zetten. Maar dit kwam in de knel met de background image die ik heb gebruikt. voor aan het begin van de site. Het lukte mij niet om dit voor elkaar te krijgen dus een deel van de bovenkant van de eerste pagina mist nu. Ook had ik graag bij mijn tweede pagina 2 columns naast elkaar gevoegd als het scherm groter werd dan 60em. Maar helaas kwam ik daar niet aan toe. Als laatst had ik graag mijn footer ook in een grid willen zetten als de site groter werd. Maar dit is ook niet gelukt, omdat het er steeds net niet uitzag hoe ik wou. Daarom heb ik het maar zo gelaten.
 
-  <img src="/readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="/readme-images/geenbackgroundimage.png" width="375px" alt="bummer">
+  <img src="/readme-images/2collumns.png" width="375px" alt="bummer">
+  <img src="/readme-images/footernietnaastelkaar.png" width="375px" alt="bummer">
 </details>
 
 
@@ -252,4 +253,5 @@ details>summary>ul>li>/li>/ul>/summary>/details>
   3. https://blog.hubspot.com/website/z-index#:~:text=What%20is%20z%2Dindex%3F,elements%20along%20the%20z%2Daxis.
   4. https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type
   5. https://stackoverflow.com/questions/45497599/how-to-set-background-image-as-header-with-logo-and-navigation-bar
+  6. https://www.handleidinghtml.nl/css/eigenschappen/display/beschrijving.html
 </details>
