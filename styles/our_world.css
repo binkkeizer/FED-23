@@ -1,15 +1,3 @@
-@font-face {
-	font-family: Roboto;
-	src: url('fonts/Roboto-Regular.woff');
-	font-weight: 400;
-	font-style: normal;
-}
-
-:root {
-	--witte-kleur:white;
-	--zwarte-kleur: black;
-	--heading-kleur: #333;
-}
 
 body {
 	margin:0;
@@ -18,7 +6,8 @@ body {
 
 main section {
 	display: grid;
-	width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+	max-width: 64em;
 	margin: 0;
 }
 
@@ -31,14 +20,12 @@ main section ul {
 
 main section ul li video {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: auto;
 }
 
 main section ul li img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: auto;
 }
 
 main section ul li h2 {
@@ -89,127 +76,26 @@ main section ul li a:focus {
 	transition: 1s;
 }
 
-footer section:first-child ul, footer section:nth-last-of-type(2) img {
-	margin: 0;
-	padding: 0.1em 0;
-	background-color: var(--zwarte-kleur);
-	display: grid;
-	gap: 0.1em;
-
-  }
-
-  footer section:first-child li {
-	background-color: var(--witte-kleur);
-	padding: 2em;
-  }
-
-  footer section ul li a {
-	text-decoration: none;
-  }
-
-  footer section:nth-of-type(2){
-	display: flex;
-	justify-content: center;
-  }
-
-  footer select {
-	width: 90%;
-	margin: 2em;
-	padding: 1em;
-	background-color: var(--witte-kleur);
-	border-style: solid;
-	border-color: var(--zwarte-kleur);
-	border-radius: 1em;
-  }
-
-  footer section ul li:first-child img {
-	filter: contrast(0.5);
-	/*Contrast lager zodat de text wat beter naar voren springt.*/
-  }
-
-  footer section:nth-of-type(3) {
-	position: relative;
-  }
-
-  footer section ul li:first-child h2 {
-	position: absolute;
-	margin: 0;
-	left: 0%;
-	bottom: 54%;
-	right: 0;
-	color: var(--witte-kleur);
-	text-align: center;
-	font-size: 2em;
-	text-transform: none;
-  }
-
-  footer section:nth-of-type(3) ul {
-	padding: 0;
-  }
-
-  footer section:nth-of-type(3) li img {
-	width: 100%;
-  	height: 100%;
-  	object-fit: cover;
-  }
-
-  footer section:nth-of-type(3) a {
-	position: absolute;
-	top: 51%;
-	left: 50%;
-	transform: translate(-50%, 0);
-	background-color: var(--witte-kleur);
-	color: var(--zwarte-kleur);
-	font-size: 1em;
-	padding: 0.75em 1.5em;
-	border: none;
-	white-space: nowrap;
-	/*Tekst gaat niet naar beneden als je het klein maakt.*/
-	cursor: pointer;
-	/*Muis krijgt handje als je over de link heen gaat.*/
-	border-radius: 5px;
-	text-decoration: none;
-  }
-
-  footer section:nth-of-type(3) a:hover {
-	background-color: var(--zwarte-kleur);
-	color: var(--witte-kleur);
-	transition: 1s;
-  }
-
-  footer section:nth-of-type(3) a:active {
-	background-color: var(--heading-kleur);
-	color: var(--witte-kleur);
-	transition: 1s;
-  }
-
-  footer section:nth-of-type(3) a:focus {
-	background-color: var(--heading-kleur);
-	color: var(--witte-kleur);
-	transition: 1s;
-  }
-
-  footer section:nth-of-type(4) ul {
-	margin: 0;
-	padding: 0;
-	background-color: var(--zwarte-kleur);
-	display: grid;
-	gap: 0.1em;
-  }
-
-  footer section:nth-of-type(4) li {
-	background-color: var(--witte-kleur);
-	padding: 1em;
-	text-align: left;
-  }
 
 
 
 @media (width > 64em) {
-
-	main section {
-		display: inline-block
-		/*https://www.handleidinghtml.nl/css/eigenschappen/display/beschrijving.html*/
+	main {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 	}
+	
+	main section {
+		margin: 0;
+	}
+	
+	main section video,
+	main section img {
+		width: 50%;
+		height: auto;
+		object-fit: cover;
+	}
+	
+
 
 }
