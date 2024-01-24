@@ -207,15 +207,14 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 
 
 
-
 ## Eindgesprek (week 5)
 
 <details>
   <summary>uiteindelijk heb ik twee pagina's gemaakt. Van de website van Filling Pieces. Namelijk de hoofdpagina en de onze wereld pagina. Bij de homepagina ben ik toch wel het trots op de sectie met mannen en vrouwen afdeling. En de tweede pagina zijn vooral filmpjes en foto's die weer naar ergens anders leiden in de echte website.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="/readme-images/footerp1.png" width="375px" alt="uitomst opdracht 1">
-  <img src="/readme-images/paginatwee.png" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/footerp1.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="/readme-images/paginatwee.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -236,7 +235,22 @@ details>summary>ul>li>/li>/ul>/summary>/details>
 </details>
 
 
+### Herkansing:
+<details open>
+<summary>Het belangrijkste wat ik voor de herkansing moest doen was de code beter ordenen. Dat heb ik nu gedaan. De fonts, custom properties, header en footer staan nu in het basis css bestand. Verder heb ik nog twee pagina's de home pagina en de our_world pagina waar nu geen footers en headers etc. inzitten.
+<img src="/readme-images/basiscssverandering.png" width="375px" alt="basis css">
+Verder heb ik het hamburger menu compleet gemaakt, want dat was die nog niet.
+<img src="/readme-images/hamburgermenunu.png" width="375px" alt="Hamburger menu">
+Daarnaast heb ik nog aan de responsiveness gewerkt van de website. Dit heb ik gedaan bij de home pagina en de our world pagina. Bij de onze wereld pagina was dat eerst niet het geval op de echte site. Maar nu wel, dus ik heb het proberen na te maken.
+<img src="/readme-images/kleineversievankleding.png" width="375px" alt="op telefoon zie je de kleding in categorieën.">En op groot scherm.
+<img src="/readme-images/groteversievankleding.png" width="375px" alt="op de computer zie je de kleding zo in categorieën.">
+Dan nu de schermen van onze wereld.
+<img src="/readme-images/kleinourworld.png" width="375px" alt="onze wereld op telefoon.">
+<img src="/readme-images/grootourworld.png" width="375px" alt="onze wereld op laptop.">
 
+
+</summary>
+</details>
 
 
 ## Bronnenlijst
